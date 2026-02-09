@@ -21,7 +21,7 @@ RUN poetry config virtualenvs.create false \
 COPY backend/app ./app
 COPY backend/alembic.ini .
 COPY backend/scripts ./scripts
-COPY backend/pyproject.toml backend/poetry.lock* ./
+COPY pyproject.toml poetry.lock* ./
 
 EXPOSE 8000
 
