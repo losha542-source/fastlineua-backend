@@ -18,9 +18,10 @@ RUN poetry config virtualenvs.create false \
  && poetry install --no-interaction --no-ansi
 
 # copy app
-COPY app ./app
-COPY alembic.ini .
-COPY scripts ./scripts
+COPY backend/app ./app
+COPY backend/alembic.ini .
+COPY backend/scripts ./scripts
+COPY backend/pyproject.toml backend/poetry.lock* ./
 
 EXPOSE 8000
 
