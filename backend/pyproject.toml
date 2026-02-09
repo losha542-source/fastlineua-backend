@@ -1,4 +1,7 @@
 [project]
+[tool.poetry]
+name = "fastlineua-backend"
+version = "0.1.0"
 name = "fastlineua-backend"
 version = "0.1.0"
 description = ""
